@@ -1,0 +1,37 @@
+vlkit.lrscheduler package
+=========================
+
+Submodules
+----------
+
+vlkit.lrscheduler.base module
+-----------------------------
+
+.. automodule:: vlkit.lrscheduler.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.lrscheduler.cosine module
+-------------------------------
+
+.. automodule:: vlkit.lrscheduler.cosine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.lrscheduler.step module
+-----------------------------
+
+.. automodule:: vlkit.lrscheduler.step
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.lrscheduler
+   :members:
+   :undoc-members:
+   :show-inheritance:

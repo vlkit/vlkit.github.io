@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="En" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vlkit.transforms package &mdash; VLKit 0.1.0b10 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VLKit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">vlkit.transforms package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-vlkit.transforms.compose">vlkit.transforms.compose module</a></li>
+<li><a class="reference internal" href="#module-vlkit.transforms.interpolation">vlkit.transforms.interpolation module</a></li>
+<li><a class="reference internal" href="#module-vlkit.transforms.npr">vlkit.transforms.npr module</a></li>
+<li><a class="reference internal" href="#module-vlkit.transforms.resize">vlkit.transforms.resize module</a></li>
+<li><a class="reference internal" href="#module-vlkit.transforms.transforms">vlkit.transforms.transforms module</a></li>
+<li><a class="reference internal" href="#module-vlkit.transforms">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VLKit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>vlkit.transforms package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/vlkit.transforms.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vlkit-transforms-package">
+<h1>vlkit.transforms package<a class="headerlink" href="#vlkit-transforms-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-vlkit.transforms.compose">
+<span id="vlkit-transforms-compose-module"></span><h2>vlkit.transforms.compose module<a class="headerlink" href="#module-vlkit.transforms.compose" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.transforms.compose.RandomChoice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.transforms.compose.</span></span><span class="sig-name descname"><span class="pre">RandomChoice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transforms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_choice</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/compose.html#RandomChoice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.compose.RandomChoice" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Random choose transforms</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>transforms</strong> (<em>list</em>) – list of transforms to be selected</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – number of transforms will be selected in each step</p></li>
+<li><p><strong>p</strong> (<em>list</em>) – probabilities if each transforms being selected</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.transforms.compose.RandomChoice.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PIL.Image.Image</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PIL.Image.Image</span></span></span><a class="reference internal" href="_modules/vlkit/transforms/compose.html#RandomChoice.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.compose.RandomChoice.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.transforms.compose.RandomChoice.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.transforms.compose.RandomChoice.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-vlkit.transforms.interpolation">
+<span id="vlkit-transforms-interpolation-module"></span><h2>vlkit.transforms.interpolation module<a class="headerlink" href="#module-vlkit.transforms.interpolation" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.transforms.interpolation.get_interp">
+<span class="sig-prename descclassname"><span class="pre">vlkit.transforms.interpolation.</span></span><span class="sig-name descname"><span class="pre">get_interp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interpolation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bilinear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pil'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/interpolation.html#get_interp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.interpolation.get_interp" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.transforms.interpolation.get_random_interp">
+<span class="sig-prename descclassname"><span class="pre">vlkit.transforms.interpolation.</span></span><span class="sig-name descname"><span class="pre">get_random_interp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pil'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/interpolation.html#get_random_interp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.interpolation.get_random_interp" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.transforms.npr">
+<span id="vlkit-transforms-npr-module"></span><h2>vlkit.transforms.npr module<a class="headerlink" href="#module-vlkit.transforms.npr" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="https://docs.opencv.org/4.5.2/df/dac/group__photo__render.html">Non-Photorealistic Rendering</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.transforms.npr.NPR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.transforms.npr.</span></span><span class="sig-name descname"><span class="pre">NPR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'stylization'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma_r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/npr.html#NPR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.npr.NPR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p><a class="reference external" href="https://docs.opencv.org/4.5.2/df/dac/group__photo__render.html">Non-Photorealistic Rendering</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>transform</strong> (<em>str</em>) – type of transformation, should be one of <cite>pencilsketch</cite>, <cite>stylization</cite>, <cite>detailEnhance</cite> or <cite>edgePreservingFilter</cite>.</p></li>
+<li><p><strong>sigma_s</strong> (<em>int</em><em> or </em><em>list of ints</em>) – see &lt;<a class="reference external" href="https://docs.opencv.org/4.5.2/df/dac/group__photo__render.html">https://docs.opencv.org/4.5.2/df/dac/group__photo__render.html</a>&gt;.</p></li>
+<li><p><strong>sigma_r</strong> (<em>float</em><em> or </em><em>list of float</em>) – see &lt;<a class="reference external" href="https://docs.opencv.org/4.5.2/df/dac/group__photo__render.html">https://docs.opencv.org/4.5.2/df/dac/group__photo__render.html</a>&gt;.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.transforms.npr.NPR.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PIL.Image.Image</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PIL.Image.Image</span></span></span><a class="reference internal" href="_modules/vlkit/transforms/npr.html#NPR.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.npr.NPR.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.transforms.npr.NPR.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.transforms.npr.NPR.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-vlkit.transforms.resize">
+<span id="vlkit-transforms-resize-module"></span><h2>vlkit.transforms.resize module<a class="headerlink" href="#module-vlkit.transforms.resize" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.transforms.resize.Resize">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.transforms.resize.</span></span><span class="sig-name descname"><span class="pre">Resize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bilinear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pil'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/resize.html#Resize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.resize.Resize" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Resize an image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size</strong> (<em>int</em><em> or </em><em>tuple</em><em>[</em><em>int</em><em>]</em>) – the target size</p></li>
+<li><p><strong>interpolation</strong> (<em>string</em><em>, </em><em>optional</em>) – interpolation, can be <cite>random</cite> or a specific interpolation method.</p></li>
+<li><p><strong>backend</strong> (<em>string</em><em>, </em><em>optional</em>) – the backend used to resize. Should be one of <cite>cv2</cite>, <cite>pil</cite> or <cite>random</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.transforms.resize.Resize.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/resize.html#Resize.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.resize.Resize.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.transforms.resize.Resize.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.transforms.resize.Resize.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.transforms.resize.format_size">
+<span class="sig-prename descclassname"><span class="pre">vlkit.transforms.resize.</span></span><span class="sig-name descname"><span class="pre">format_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/resize.html#format_size"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.resize.format_size" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.transforms.resize.resize">
+<span class="sig-prename descclassname"><span class="pre">vlkit.transforms.resize.</span></span><span class="sig-name descname"><span class="pre">resize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">im</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bilinear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pil'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/resize.html#resize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.resize.resize" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.transforms.transforms">
+<span id="vlkit-transforms-transforms-module"></span><h2>vlkit.transforms.transforms module<a class="headerlink" href="#module-vlkit.transforms.transforms" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.transforms.transforms.CoordCrop">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.transforms.transforms.</span></span><span class="sig-name descname"><span class="pre">CoordCrop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/transforms.html#CoordCrop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.transforms.CoordCrop" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.transforms.transforms.CoordCrop.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/transforms/transforms.html#CoordCrop.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.transforms.transforms.CoordCrop.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.transforms.transforms.CoordCrop.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.transforms.transforms.CoordCrop.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-vlkit.transforms">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-vlkit.transforms" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Kai Zhao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

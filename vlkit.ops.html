@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="En" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vlkit.ops package &mdash; VLKit 0.1.0b10 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VLKit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">vlkit.ops package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#vlkit-ops-blocks-module">vlkit.ops.blocks module</a></li>
+<li><a class="reference internal" href="#vlkit-ops-conv-module">vlkit.ops.conv module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops.distributed">vlkit.ops.distributed module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops.divergence">vlkit.ops.divergence module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops.drop">vlkit.ops.drop module</a></li>
+<li><a class="reference internal" href="#vlkit-ops-dual-bn-module">vlkit.ops.dual_bn module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops.functional">vlkit.ops.functional module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops.nn">vlkit.ops.nn module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops.non_local">vlkit.ops.non_local module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops.scale_grad">vlkit.ops.scale_grad module</a></li>
+<li><a class="reference internal" href="#vlkit-ops-squeeze-excite-module">vlkit.ops.squeeze_excite module</a></li>
+<li><a class="reference internal" href="#module-vlkit.ops">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VLKit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>vlkit.ops package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/vlkit.ops.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vlkit-ops-package">
+<h1>vlkit.ops package<a class="headerlink" href="#vlkit-ops-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="vlkit-ops-blocks-module">
+<h2>vlkit.ops.blocks module<a class="headerlink" href="#vlkit-ops-blocks-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="vlkit-ops-conv-module">
+<h2>vlkit.ops.conv module<a class="headerlink" href="#vlkit-ops-conv-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-vlkit.ops.distributed">
+<span id="vlkit-ops-distributed-module"></span><h2>vlkit.ops.distributed module<a class="headerlink" href="#module-vlkit.ops.distributed" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.ops.distributed.AllGather">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.ops.distributed.</span></span><span class="sig-name descname"><span class="pre">AllGather</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/distributed.html#AllGather"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.distributed.AllGather" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.autograd.function.Function</span></code></p>
+<p>all_gather with gradient back-propagation</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.distributed.AllGather.backward">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">backward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">grad_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/distributed.html#AllGather.backward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.distributed.AllGather.backward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines a formula for differentiating the operation.</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx</span></code> as the first argument, followed by
+as many outputs as the <a class="reference internal" href="#vlkit.ops.distributed.AllGather.forward" title="vlkit.ops.distributed.AllGather.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> returned (None will be passed in
+for non tensor outputs of the forward function),
+and it should return as many tensors, as there were inputs to
+<a class="reference internal" href="#vlkit.ops.distributed.AllGather.forward" title="vlkit.ops.distributed.AllGather.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. Each argument is the gradient w.r.t the given output,
+and each returned value should be the gradient w.r.t. the
+corresponding input. If an input is not a Tensor or is a Tensor not
+requiring grads, you can just pass None as a gradient for that input.</p>
+<p>The context can be used to retrieve tensors saved during the forward
+pass. It also has an attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx.needs_input_grad</span></code> as a tuple
+of booleans representing whether each input needs gradient. E.g.,
+<a class="reference internal" href="#vlkit.ops.distributed.AllGather.backward" title="vlkit.ops.distributed.AllGather.backward"><code class="xref py py-func docutils literal notranslate"><span class="pre">backward()</span></code></a> will have <code class="docutils literal notranslate"><span class="pre">ctx.needs_input_grad[0]</span> <span class="pre">=</span> <span class="pre">True</span></code> if the
+first input to <a class="reference internal" href="#vlkit.ops.distributed.AllGather.forward" title="vlkit.ops.distributed.AllGather.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> needs gradient computated w.r.t. the
+output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.distributed.AllGather.forward">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tensor_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tensor</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/distributed.html#AllGather.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.distributed.AllGather.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Performs the operation.</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context ctx as the first argument, followed by any
+number of arguments (tensors or other types).</p>
+<p>The context can be used to store arbitrary data that can be then
+retrieved during the backward pass.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.distributed.all_gather">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.distributed.</span></span><span class="sig-name descname"><span class="pre">all_gather</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vlkit.ops.distributed.all_gather" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.ops.divergence">
+<span id="vlkit-ops-divergence-module"></span><h2>vlkit.ops.divergence module<a class="headerlink" href="#module-vlkit.ops.divergence" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.divergence.js_divergence">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.divergence.</span></span><span class="sig-name descname"><span class="pre">js_divergence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/divergence.html#js_divergence"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.divergence.js_divergence" title="Permalink to this definition"></a></dt>
+<dd><p>The Jensen–Shannon divergence
+Inputs are similar to kl_divergence</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.divergence.js_loss">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.divergence.</span></span><span class="sig-name descname"><span class="pre">js_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/divergence.html#js_loss"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.divergence.js_loss" title="Permalink to this definition"></a></dt>
+<dd><p>js loss, similar to kl_loss</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.divergence.kl_divergence">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.divergence.</span></span><span class="sig-name descname"><span class="pre">kl_divergence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/divergence.html#kl_divergence"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.divergence.kl_divergence" title="Permalink to this definition"></a></dt>
+<dd><p>KL divergence between vectors
+When normalize = True, inputs x and y are vectors BEFORE normalization (eg. softmax),
+when normalize = False, x, y are probabilities that must sum to 1</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.divergence.kl_loss">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.divergence.</span></span><span class="sig-name descname"><span class="pre">kl_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/divergence.html#kl_loss"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.divergence.kl_loss" title="Permalink to this definition"></a></dt>
+<dd><p>kl loss which is often used in distillation</p>
+</dd></dl>
+
+</section>
+<section id="module-vlkit.ops.drop">
+<span id="vlkit-ops-drop-module"></span><h2>vlkit.ops.drop module<a class="headerlink" href="#module-vlkit.ops.drop" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.ops.drop.DropPath">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.ops.drop.</span></span><span class="sig-name descname"><span class="pre">DropPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/drop.html#DropPath"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.drop.DropPath" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Randomly drop paths (zero output) per sample.
+p: probability of dropping samples</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.drop.DropPath.extra_repr">
+<span class="sig-name descname"><span class="pre">extra_repr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/drop.html#DropPath.extra_repr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.drop.DropPath.extra_repr" title="Permalink to this definition"></a></dt>
+<dd><p>Set the extra representation of the module</p>
+<p>To print customized extra information, you should re-implement
+this method in your own modules. Both single-line and multi-line
+strings are acceptable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.drop.DropPath.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/drop.html#DropPath.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.drop.DropPath.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.ops.drop.DropPath.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.ops.drop.DropPath.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="vlkit-ops-dual-bn-module">
+<h2>vlkit.ops.dual_bn module<a class="headerlink" href="#vlkit-ops-dual-bn-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-vlkit.ops.functional">
+<span id="vlkit-ops-functional-module"></span><h2>vlkit.ops.functional module<a class="headerlink" href="#module-vlkit.ops.functional" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.functional.minmax_normalize">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.functional.</span></span><span class="sig-name descname"><span class="pre">minmax_normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/functional.html#minmax_normalize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.functional.minmax_normalize" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.ops.nn">
+<span id="vlkit-ops-nn-module"></span><h2>vlkit.ops.nn module<a class="headerlink" href="#module-vlkit.ops.nn" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.ops.nn.ArcFace">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.ops.nn.</span></span><span class="sig-name descname"><span class="pre">ArcFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ada_m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warmup_iters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/nn.html#ArcFace"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.nn.ArcFace" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>ArcFace <a class="reference external" href="https://arxiv.org/pdf/1801.07698">https://arxiv.org/pdf/1801.07698</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.nn.ArcFace.extra_repr">
+<span class="sig-name descname"><span class="pre">extra_repr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/nn.html#ArcFace.extra_repr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.nn.ArcFace.extra_repr" title="Permalink to this definition"></a></dt>
+<dd><p>Set the extra representation of the module</p>
+<p>To print customized extra information, you should re-implement
+this method in your own modules. Both single-line and multi-line
+strings are acceptable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.nn.ArcFace.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/nn.html#ArcFace.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.nn.ArcFace.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.nn.ArcFace.reset_parameters">
+<span class="sig-name descname"><span class="pre">reset_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/nn.html#ArcFace.reset_parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.nn.ArcFace.reset_parameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.ops.nn.ArcFace.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.ops.nn.ArcFace.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.nn.deconv_upsample">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.nn.</span></span><span class="sig-name descname"><span class="pre">deconv_upsample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/nn.html#deconv_upsample"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.nn.deconv_upsample" title="Permalink to this definition"></a></dt>
+<dd><p>channels: number of input/output channels
+stride: upsampling factor
+fixed: whether fix deconv parameters (default: True)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.nn.upsample_filter">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.nn.</span></span><span class="sig-name descname"><span class="pre">upsample_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/nn.html#upsample_filter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.nn.upsample_filter" title="Permalink to this definition"></a></dt>
+<dd><p>Make a 2D bilinear kernel suitable for upsampling of the given (h, w) size.
+reference: <a class="reference external" href="https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/surgery.py">https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/surgery.py</a></p>
+</dd></dl>
+
+</section>
+<section id="module-vlkit.ops.non_local">
+<span id="vlkit-ops-non-local-module"></span><h2>vlkit.ops.non_local module<a class="headerlink" href="#module-vlkit.ops.non_local" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.ops.non_local.NonLocal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.ops.non_local.</span></span><span class="sig-name descname"><span class="pre">NonLocal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_chs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_chs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_affinity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/non_local.html#NonLocal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.non_local.NonLocal" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.non_local.NonLocal.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/non_local.html#NonLocal.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.non_local.NonLocal.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.ops.non_local.NonLocal.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.ops.non_local.NonLocal.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-vlkit.ops.scale_grad">
+<span id="vlkit-ops-scale-grad-module"></span><h2>vlkit.ops.scale_grad module<a class="headerlink" href="#module-vlkit.ops.scale_grad" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.ops.scale_grad.ScaleGrad">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.ops.scale_grad.</span></span><span class="sig-name descname"><span class="pre">ScaleGrad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scale</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/scale_grad.html#ScaleGrad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.scale_grad.ScaleGrad" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Scale gradient.
+This module can be used to inverse the gradient (e.g. scale=-1)
+or block the gradient (e.g. scale=0)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.scale_grad.ScaleGrad.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/scale_grad.html#ScaleGrad.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.scale_grad.ScaleGrad.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vlkit.ops.scale_grad.ScaleGrad.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#vlkit.ops.scale_grad.ScaleGrad.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="vlkit.ops.scale_grad.ScaleGradFunc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vlkit.ops.scale_grad.</span></span><span class="sig-name descname"><span class="pre">ScaleGradFunc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/scale_grad.html#ScaleGradFunc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.scale_grad.ScaleGradFunc" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.autograd.function.Function</span></code></p>
+<p>Scale the gradient</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.scale_grad.ScaleGradFunc.backward">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">backward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grad_output</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/scale_grad.html#ScaleGradFunc.backward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.scale_grad.ScaleGradFunc.backward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines a formula for differentiating the operation.</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx</span></code> as the first argument, followed by
+as many outputs as the <a class="reference internal" href="#vlkit.ops.scale_grad.ScaleGradFunc.forward" title="vlkit.ops.scale_grad.ScaleGradFunc.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> returned (None will be passed in
+for non tensor outputs of the forward function),
+and it should return as many tensors, as there were inputs to
+<a class="reference internal" href="#vlkit.ops.scale_grad.ScaleGradFunc.forward" title="vlkit.ops.scale_grad.ScaleGradFunc.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. Each argument is the gradient w.r.t the given output,
+and each returned value should be the gradient w.r.t. the
+corresponding input. If an input is not a Tensor or is a Tensor not
+requiring grads, you can just pass None as a gradient for that input.</p>
+<p>The context can be used to retrieve tensors saved during the forward
+pass. It also has an attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx.needs_input_grad</span></code> as a tuple
+of booleans representing whether each input needs gradient. E.g.,
+<a class="reference internal" href="#vlkit.ops.scale_grad.ScaleGradFunc.backward" title="vlkit.ops.scale_grad.ScaleGradFunc.backward"><code class="xref py py-func docutils literal notranslate"><span class="pre">backward()</span></code></a> will have <code class="docutils literal notranslate"><span class="pre">ctx.needs_input_grad[0]</span> <span class="pre">=</span> <span class="pre">True</span></code> if the
+first input to <a class="reference internal" href="#vlkit.ops.scale_grad.ScaleGradFunc.forward" title="vlkit.ops.scale_grad.ScaleGradFunc.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> needs gradient computated w.r.t. the
+output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vlkit.ops.scale_grad.ScaleGradFunc.forward">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/ops/scale_grad.html#ScaleGradFunc.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.ops.scale_grad.ScaleGradFunc.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Performs the operation.</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context ctx as the first argument, followed by any
+number of arguments (tensors or other types).</p>
+<p>The context can be used to store arbitrary data that can be then
+retrieved during the backward pass.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.ops.scale_grad.scale_grad">
+<span class="sig-prename descclassname"><span class="pre">vlkit.ops.scale_grad.</span></span><span class="sig-name descname"><span class="pre">scale_grad</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vlkit.ops.scale_grad.scale_grad" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="vlkit-ops-squeeze-excite-module">
+<h2>vlkit.ops.squeeze_excite module<a class="headerlink" href="#vlkit-ops-squeeze-excite-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-vlkit.ops">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-vlkit.ops" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Kai Zhao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

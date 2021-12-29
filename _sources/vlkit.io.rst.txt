@@ -1,0 +1,29 @@
+vlkit.io package
+================
+
+Submodules
+----------
+
+vlkit.io.bytes module
+---------------------
+
+.. automodule:: vlkit.io.bytes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.io.pickle module
+----------------------
+
+.. automodule:: vlkit.io.pickle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.io
+   :members:
+   :undoc-members:
+   :show-inheritance:

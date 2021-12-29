@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="En" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vlkit package &mdash; VLKit 0.1.0b10 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VLKit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">vlkit package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-vlkit.args">vlkit.args module</a></li>
+<li><a class="reference internal" href="#module-vlkit.detection">vlkit.detection module</a></li>
+<li><a class="reference internal" href="#module-vlkit.imagenet_labels">vlkit.imagenet_labels module</a></li>
+<li><a class="reference internal" href="#module-vlkit.semseg">vlkit.semseg module</a></li>
+<li><a class="reference internal" href="#module-vlkit.utils">vlkit.utils module</a></li>
+<li><a class="reference internal" href="#module-vlkit">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VLKit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>vlkit package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/vlkit.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vlkit-package">
+<h1>vlkit package<a class="headerlink" href="#vlkit-package" title="Permalink to this headline"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.datasets.html">vlkit.datasets package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.datasets.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.datasets.html#module-vlkit.datasets.datasets">vlkit.datasets.datasets module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.datasets.html#module-vlkit.datasets.filelist">vlkit.datasets.filelist module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.datasets.html#module-vlkit.datasets">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.dense.html">vlkit.dense package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.dense.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.dense.html#module-vlkit.dense.dense">vlkit.dense.dense module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.dense.html#module-vlkit.dense">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.geometry.html">vlkit.geometry package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.geometry.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.geometry.html#module-vlkit.geometry.distance_transform">vlkit.geometry.distance_transform module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.geometry.html#module-vlkit.geometry">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.image.html">vlkit.image package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.image.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.image.html#module-vlkit.image.image">vlkit.image.image module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.image.html#module-vlkit.image">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.io.html">vlkit.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.io.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.io.html#module-vlkit.io.bytes">vlkit.io.bytes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.io.html#module-vlkit.io.pickle">vlkit.io.pickle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.io.html#module-vlkit.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.lrscheduler.html">vlkit.lrscheduler package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.lrscheduler.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.lrscheduler.html#module-vlkit.lrscheduler.base">vlkit.lrscheduler.base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.lrscheduler.html#module-vlkit.lrscheduler.cosine">vlkit.lrscheduler.cosine module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.lrscheduler.html#module-vlkit.lrscheduler.step">vlkit.lrscheduler.step module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.lrscheduler.html#module-vlkit.lrscheduler">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.models.html">vlkit.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.models.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.models.html#module-vlkit.models.transformer">vlkit.models.transformer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.models.html#module-vlkit.models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.nms.html">vlkit.nms package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.nms.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.nms.html#vlkit-nms-nms-ext-module">vlkit.nms.nms_ext module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.nms.html#module-vlkit.nms">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.ops.html">vlkit.ops package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#vlkit-ops-blocks-module">vlkit.ops.blocks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#vlkit-ops-conv-module">vlkit.ops.conv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops.distributed">vlkit.ops.distributed module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops.divergence">vlkit.ops.divergence module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops.drop">vlkit.ops.drop module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#vlkit-ops-dual-bn-module">vlkit.ops.dual_bn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops.functional">vlkit.ops.functional module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops.nn">vlkit.ops.nn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops.non_local">vlkit.ops.non_local module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops.scale_grad">vlkit.ops.scale_grad module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#vlkit-ops-squeeze-excite-module">vlkit.ops.squeeze_excite module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.ops.html#module-vlkit.ops">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.plt.html">vlkit.plt package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.plt.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.plt.html#module-vlkit.plt.ticks">vlkit.plt.ticks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.plt.html#module-vlkit.plt">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.pytorch.html">vlkit.pytorch package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.pytorch.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.pytorch.html#module-vlkit.pytorch.loss">vlkit.pytorch.loss module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.pytorch.html#module-vlkit.pytorch.wasserstein">vlkit.pytorch.wasserstein module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.pytorch.html#module-vlkit.pytorch">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vlkit.transforms.html">vlkit.transforms package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.transforms.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.transforms.html#module-vlkit.transforms.compose">vlkit.transforms.compose module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.transforms.html#module-vlkit.transforms.interpolation">vlkit.transforms.interpolation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.transforms.html#module-vlkit.transforms.npr">vlkit.transforms.npr module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.transforms.html#module-vlkit.transforms.resize">vlkit.transforms.resize module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.transforms.html#module-vlkit.transforms.transforms">vlkit.transforms.transforms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vlkit.transforms.html#module-vlkit.transforms">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-vlkit.args">
+<span id="vlkit-args-module"></span><h2>vlkit.args module<a class="headerlink" href="#module-vlkit.args" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.args.str2bool">
+<span class="sig-prename descclassname"><span class="pre">vlkit.args.</span></span><span class="sig-name descname"><span class="pre">str2bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/args.html#str2bool"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.args.str2bool" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.detection">
+<span id="vlkit-detection-module"></span><h2>vlkit.detection module<a class="headerlink" href="#module-vlkit.detection" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.detection.bbox2mask">
+<span class="sig-prename descclassname"><span class="pre">vlkit.detection.</span></span><span class="sig-name descname"><span class="pre">bbox2mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bbox</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/detection.html#bbox2mask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.detection.bbox2mask" title="Permalink to this definition"></a></dt>
+<dd><p>convert bounding box to binary mask
+bbox: a bounding box represeting [x1, y1, x2, y2]
+size: size of the mask [H, W]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.detection.box_coverage">
+<span class="sig-prename descclassname"><span class="pre">vlkit.detection.</span></span><span class="sig-name descname"><span class="pre">box_coverage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bbox</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/detection.html#box_coverage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.detection.box_coverage" title="Permalink to this definition"></a></dt>
+<dd><p>coverage of a box w.r.t the GT mask
+bbox: a bounding box represeting [x1, y1, x2, y2]
+mask: the GT binary mask</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.detection.visualize_bboxes">
+<span class="sig-prename descclassname"><span class="pre">vlkit.detection.</span></span><span class="sig-name descname"><span class="pre">visualize_bboxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bboxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/detection.html#visualize_bboxes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.detection.visualize_bboxes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.imagenet_labels">
+<span id="vlkit-imagenet-labels-module"></span><h2>vlkit.imagenet_labels module<a class="headerlink" href="#module-vlkit.imagenet_labels" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.imagenet_labels.imagenet_labels">
+<span class="sig-prename descclassname"><span class="pre">vlkit.imagenet_labels.</span></span><span class="sig-name descname"><span class="pre">imagenet_labels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/imagenet_labels.html#imagenet_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.imagenet_labels.imagenet_labels" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.semseg">
+<span id="vlkit-semseg-module"></span><h2>vlkit.semseg module<a class="headerlink" href="#module-vlkit.semseg" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.semseg.color_encode">
+<span class="sig-prename descclassname"><span class="pre">vlkit.semseg.</span></span><span class="sig-name descname"><span class="pre">color_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labelmap</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/semseg.html#color_encode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.semseg.color_encode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vlkit.semseg.rand_palette">
+<span class="sig-prename descclassname"><span class="pre">vlkit.semseg.</span></span><span class="sig-name descname"><span class="pre">rand_palette</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">21</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vlkit/semseg.html#rand_palette"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vlkit.semseg.rand_palette" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vlkit.utils">
+<span id="vlkit-utils-module"></span><h2>vlkit.utils module<a class="headerlink" href="#module-vlkit.utils" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-vlkit">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-vlkit" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Kai Zhao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

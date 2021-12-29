@@ -1,0 +1,29 @@
+vlkit.pytorch package
+=====================
+
+Submodules
+----------
+
+vlkit.pytorch.loss module
+-------------------------
+
+.. automodule:: vlkit.pytorch.loss
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.pytorch.wasserstein module
+--------------------------------
+
+.. automodule:: vlkit.pytorch.wasserstein
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.pytorch
+   :members:
+   :undoc-members:
+   :show-inheritance:

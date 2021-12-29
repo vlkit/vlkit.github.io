@@ -1,0 +1,101 @@
+vlkit.ops package
+=================
+
+Submodules
+----------
+
+vlkit.ops.blocks module
+-----------------------
+
+.. automodule:: vlkit.ops.blocks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.conv module
+---------------------
+
+.. automodule:: vlkit.ops.conv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.distributed module
+----------------------------
+
+.. automodule:: vlkit.ops.distributed
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.divergence module
+---------------------------
+
+.. automodule:: vlkit.ops.divergence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.drop module
+---------------------
+
+.. automodule:: vlkit.ops.drop
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.dual\_bn module
+-------------------------
+
+.. automodule:: vlkit.ops.dual_bn
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.functional module
+---------------------------
+
+.. automodule:: vlkit.ops.functional
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.nn module
+-------------------
+
+.. automodule:: vlkit.ops.nn
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.non\_local module
+---------------------------
+
+.. automodule:: vlkit.ops.non_local
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.scale\_grad module
+----------------------------
+
+.. automodule:: vlkit.ops.scale_grad
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.ops.squeeze\_excite module
+--------------------------------
+
+.. automodule:: vlkit.ops.squeeze_excite
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.ops
+   :members:
+   :undoc-members:
+   :show-inheritance:

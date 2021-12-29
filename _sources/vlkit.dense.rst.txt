@@ -1,0 +1,21 @@
+vlkit.dense package
+===================
+
+Submodules
+----------
+
+vlkit.dense.dense module
+------------------------
+
+.. automodule:: vlkit.dense.dense
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.dense
+   :members:
+   :undoc-members:
+   :show-inheritance:

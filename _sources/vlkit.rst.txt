@@ -1,0 +1,72 @@
+vlkit package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   vlkit.datasets
+   vlkit.dense
+   vlkit.geometry
+   vlkit.image
+   vlkit.io
+   vlkit.lrscheduler
+   vlkit.models
+   vlkit.nms
+   vlkit.ops
+   vlkit.plt
+   vlkit.pytorch
+   vlkit.transforms
+
+Submodules
+----------
+
+vlkit.args module
+-----------------
+
+.. automodule:: vlkit.args
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.detection module
+----------------------
+
+.. automodule:: vlkit.detection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.imagenet\_labels module
+-----------------------------
+
+.. automodule:: vlkit.imagenet_labels
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.semseg module
+-------------------
+
+.. automodule:: vlkit.semseg
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.utils module
+------------------
+
+.. automodule:: vlkit.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit
+   :members:
+   :undoc-members:
+   :show-inheritance:

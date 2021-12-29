@@ -1,0 +1,29 @@
+vlkit.datasets package
+======================
+
+Submodules
+----------
+
+vlkit.datasets.datasets module
+------------------------------
+
+.. automodule:: vlkit.datasets.datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+vlkit.datasets.filelist module
+------------------------------
+
+.. automodule:: vlkit.datasets.filelist
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:

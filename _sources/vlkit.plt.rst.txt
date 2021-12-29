@@ -1,0 +1,21 @@
+vlkit.plt package
+=================
+
+Submodules
+----------
+
+vlkit.plt.ticks module
+----------------------
+
+.. automodule:: vlkit.plt.ticks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.plt
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,21 @@
+vlkit.nms package
+=================
+
+Submodules
+----------
+
+vlkit.nms.nms\_ext module
+-------------------------
+
+.. automodule:: vlkit.nms.nms_ext
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.nms
+   :members:
+   :undoc-members:
+   :show-inheritance:

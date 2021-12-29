@@ -1,0 +1,21 @@
+vlkit.geometry package
+======================
+
+Submodules
+----------
+
+vlkit.geometry.distance\_transform module
+-----------------------------------------
+
+.. automodule:: vlkit.geometry.distance_transform
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: vlkit.geometry
+   :members:
+   :undoc-members:
+   :show-inheritance:
